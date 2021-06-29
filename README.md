@@ -33,19 +33,17 @@ BODY EXEMPLO: RAW
 
 
 {
-    "data":
-            {
-                "lab"
-	              [
-                        {   
-                            "name":"Laboratorio_2",
-                            "address":"Endereço2"
+  "data":
+         {
+           "lab"[
+                 {   
+                    "name":"Laboratorio_2",
+                     "address":"Endereço2"
 
-                        }
+                  }
 
-                    ]
-            }  
-       
+                ]
+          }
 }
 
 
