@@ -31,16 +31,12 @@ http://localhost:3007/api/addLab (METODO POST)
 
 BODY EXEMPLO: RAW
 
+
 {
     "data":
             {
-                "lab":
-                    [
-                        {   
-                            "name":"Laboratorio_1",
-                            "address":"Endereço1"
-
-                        },
+                "lab"
+	              [
                         {   
                             "name":"Laboratorio_2",
                             "address":"Endereço2"
