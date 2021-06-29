@@ -1,0 +1,657 @@
+{
+	"info": {
+		"_postman_id": "0adbaeba-d341-48e6-abe0-8ca9e78761f5",
+		"name": "API DESAFIO WA",
+		"description": "# Introduction\nAPI desafio wa\n\n# Overview\nAS APIS DE LABORATÓRIO ACEITAM INSERT,DELETE,CHANGE EM LOTE\nAS RESTANTES NÃO ACEITAM\n\n# Authentication\nNÃO TEM AUTENTICAÇÃO\n\n# Error Codes\nWhat errors and status codes can a user expect?\n\n# Rate limit\nIs there a limit to the number of requests an user can send?",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3007/api/addLab",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3007/api/addLab",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3007",
+					"path": [
+						"api",
+						"addLab"
+					]
+				},
+				"description": "API para Adicionar Laboratórios"
+			},
+			"response": [
+				{
+					"name": "http://localhost:3007/api/addLab",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n   \"data\": \r\n       { \r\n        \"lab\"\r\n            [ \r\n              {\r\n               \"name\":\"Laboratorio_2\",\r\n               \"address\":\"Endereço2\r\n              },\r\n               {\r\n               \"name\":\"Laboratorio_1\",\r\n               \"address\":\"Endereço1\r\n              }\r\n            ]\r\n      }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3007/api/addLab",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3007",
+							"path": [
+								"api",
+								"addLab"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3007/api/changeLab",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3007/api/changeLab",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3007",
+					"path": [
+						"api",
+						"changeLab"
+					]
+				},
+				"description": "API para Alterar Laboratórios"
+			},
+			"response": [
+				{
+					"name": "http://localhost:3007/api/changeLab",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data\":\r\n            {\r\n                \"lab\":\r\n                    [\r\n                        {   \r\n                            \"findId\":1,\r\n                            \"name\":\"Laboratorio_1\",\r\n                            \"address\":\"Endereço1\",\r\n                            \"status\":1\r\n\r\n                        },\r\n                        {   \r\n                            \"findId\":2,\r\n                            \"name\":\"Laboratorio_2\",\r\n                            \"address\":\"Endereço2\",\r\n                            \"status\":2\r\n\r\n                        }\r\n\r\n                    ]\r\n            }  \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3007/api/changeLab",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3007",
+							"path": [
+								"api",
+								"changeLab"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3007/api/changeLab",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3007/api/deleteLab",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3007",
+					"path": [
+						"api",
+						"deleteLab"
+					]
+				},
+				"description": "API para Mudar Laboratórios"
+			},
+			"response": [
+				{
+					"name": "http://localhost:3007/api/changeLab",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data\": {\r\n        \"lab\": [\r\n            {\r\n                \"id\": 1\r\n            },\r\n            {\r\n                \"id\": 2\r\n            }\r\n        ]\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3007/api/deleteLab",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3007",
+							"path": [
+								"api",
+								"deleteLab"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3007/api/listActiveLabs",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3007/api/listActiveLabs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3007",
+					"path": [
+						"api",
+						"listActiveLabs"
+					]
+				},
+				"description": "API para listar Laboratórios Ativos"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3007/api/addExam",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3007/api/addExam",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3007",
+					"path": [
+						"api",
+						"addExam"
+					]
+				},
+				"description": "API para adicionar Exames"
+			},
+			"response": [
+				{
+					"name": "http://localhost:3007/api/addExam",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "teste",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "name",
+									"value": "examname",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3007/api/addExam",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3007",
+							"path": [
+								"api",
+								"addExam"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3007/api/changeExam",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3007/api/changeExam",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3007",
+					"path": [
+						"api",
+						"changeExam"
+					]
+				},
+				"description": "API para mudar Exames"
+			},
+			"response": [
+				{
+					"name": "http://localhost:3007/api/changeExam",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "teste",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3007/api/changeExam",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3007",
+							"path": [
+								"api",
+								"changeExam"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3007/api/deleteExam",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3007/api/deleteExam",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3007",
+					"path": [
+						"api",
+						"deleteExam"
+					]
+				},
+				"description": "API para deletar Exames"
+			},
+			"response": [
+				{
+					"name": "http://localhost:3007/api/deleteExam",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data\":\r\n            {\r\n                \"exams\":\r\n                    \r\n                       [ \r\n                           {   \r\n                            \"id\":1\r\n\r\n                            }\r\n                        ]\r\n\r\n                    \r\n            }  \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3007/api/deleteExam",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3007",
+							"path": [
+								"api",
+								"deleteExam"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3007/api/listExam",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3007/api/listExam",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3007",
+					"path": [
+						"api",
+						"listExam"
+					]
+				},
+				"description": "API para Listar Exames Ativos"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3007/api/addAssociation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3007/api/addAssociation",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3007",
+					"path": [
+						"api",
+						"addAssociation"
+					]
+				},
+				"description": "API para Adicionar Associação"
+			},
+			"response": [
+				{
+					"name": "http://localhost:3007/api/addAssociation",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data\":\r\n\t\r\n        {\r\n                \"idLab\": 1,\r\n                \"idExam\":1\r\n                        \r\n                    \r\n        }  \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3007/api/addAssociation",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3007",
+							"path": [
+								"api",
+								"addAssociation"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3007/api/deleteAssociation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3007/api/deleteAssociation",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3007",
+					"path": [
+						"api",
+						"deleteAssociation"
+					]
+				},
+				"description": "API para deletar Associação"
+			},
+			"response": [
+				{
+					"name": "http://localhost:3007/api/deleteAssociation",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data\":\r\n            {\r\n                \"id\": 1\r\n                \r\n            }  \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3007/api/deleteAssociation",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3007",
+							"path": [
+								"api",
+								"deleteAssociation"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3007/api/listAssociation",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3007/api/listAssociation",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3007",
+					"path": [
+						"api",
+						"listAssociation"
+					]
+				},
+				"description": "API para listar Associação"
+			},
+			"response": [
+				{
+					"name": "http://localhost:3007/api/listAssociation",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data\":\r\n            {\r\n                \"name\": \"exame\"\r\n                \r\n            }  \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3007/api/listAssociation",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3007",
+							"path": [
+								"api",
+								"listAssociation"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	]
+}
